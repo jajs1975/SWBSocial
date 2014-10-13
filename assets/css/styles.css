@@ -1,0 +1,113 @@
+ul {
+    clear: both;
+}
+
+.content {
+    position: absolute;
+}
+
+.bar-header-secondary>input {
+    margin-top: 6px;
+    height: 31px;
+}
+
+.table-view {
+    margin: 0 !important;
+    border: none;
+}
+
+.details h1 {
+    padding-top: 16px;
+    font-size: 18px;
+}
+ 
+.media-object { width:20px; height:18px; border-radius:25px; margin-top:11px; margin-right:5px !important;}
+
+.icon-call {
+    background: transparent url(images/ic_action_phone_outgoing.png);
+    background-repeat: no-repeat;
+}
+
+.icon-sms {
+    background: transparent url(images/ic_action_dialog.png);
+    background-repeat: no-repeat;
+}
+
+.icon-mail {
+    background: transparent url(images/ic_action_mail.png);
+    background-repeat: no-repeat;
+}
+
+.icon-manager {
+    background: transparent url(images/ic_action_user.png);
+    background-repeat: no-repeat;
+}
+
+.icon-reports {
+    background: transparent url(images/ic_action_users.png);
+    background-repeat: no-repeat;
+}
+
+.icon-contact {
+    background: transparent url(images/ic_action_add.png);
+    background-repeat: no-repeat;
+}
+
+.icon-location {
+    background: transparent url(images/ic_action_location.png);
+    background-repeat: no-repeat;
+}
+
+#wrapper {
+	position:absolute; z-index:1;
+	top:0; bottom:0; left:0;
+	width:100%;
+	background:#aaa;
+	overflow:auto;
+}
+
+/*SCROLER*/
+#scroller { overflow: auto; -webkit-overflow-scrolling: touch; }
+#scroller ul { list-style:none; padding:0; margin:0; width:100%; text-align:left; padding-top:45px;}
+#scroller li { padding:4px 0 4px 10px; background-color:#FFF; }
+#scroller li a { text-decoration:none; color:#999; text-shadow:none; display:block; border-bottom:1px solid #666; line-height:40px; font-size:14px; padding-left:10px; width:100%;}
+#scroller li a:active { border-bottom:1px solid #fc6; text-shadow:1px 1px 1px #a84706; color:#FFF;
+  background: -webkit-linear-gradient(90deg, #f8861f, #f8861f, #FFF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(90deg, #f8861f, #f8861f, #FFF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(90deg, #f8861f, #f8861f, #FFF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(90deg, #f8861f, #f8861f, #FFF); /* Standard syntax */}
+
+
+.socialHeader {
+  background: url(images/swb-social.png) no-repeat center, -webkit-linear-gradient(90deg, #e1e1e1, #FFF, #e1e1e1); /* For Safari 5.1 to 6.0 */
+  background: url(images/swb-social.png) no-repeat center, -o-linear-gradient(90deg, #e1e1e1, #FFF, #e1e1e1); /* For Opera 11.1 to 12.0 */
+  background: url(images/swb-social.png) no-repeat center, -moz-linear-gradient(90deg, #e1e1e1, #FFF, #e1e1e1); /* For Firefox 3.6 to 15 */
+  background: url(images/swb-social.png) no-repeat center, linear-gradient(90deg, #e1e1e1, #FFF, #e1e1e1); /* Standard syntax */}
+
+form#authForm  { padding-left:25px;}
+#authForm div  { margin-top:60px;}
+#authForm input, #authForm label { font-size:20px; color:#666;}
+
+#authForm label {margin-bottom: 5px !important; display: block; color:#f47516;}
+
+.navigate-right:after, .push-right:after { right:0px !important;}
+input#username, input#server, input#password { background:#fafafa; height:50px; width:90%; color:#666; border-radius:5px;}
+#authForm #submitButton { width:90%; padding:15px; text-shadow:1px 1px 1px #000; color:#FFF; border-radius:5px; border: solid 1px #666;
+  background: -webkit-linear-gradient(180deg, #f47516, #ffd298, #f47516); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(180deg, #f47516, #ffd298, #f47516); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(180deg, #f47516, #ffd298, #f47516); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(180deg, #f47516, #ffd298, #f47516); /* Standard syntax */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+App-o-Mat jQuery Mobile Cordova starter template
+Copyright 2014 Lou Franco
+https://github.com/app-o-mat/jqm-cordova-template-project
+http://app-o-mat.com
+
+MIT License
+https://github.com/app-o-mat/jqm-cordova-template-project/LICENSE.md
+-->
+<head>	
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+
+	<title>SWB Social</title>
+	<!--
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="lib/jquery-mobile/css/jquery.mobile-1.4.0.min.css" />
+	<script type="text/javascript" src="lib/jquery-mobile/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-mobile-router/js/jquery.mobile.router.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-mobile/js/jquery.mobile-1.4.0.min.js"></script>
+	<!--script type="text/javascript" src="js/index.js"></script-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.router.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<!--
+    <script type="text/javascript">
+	var router=new $.mobile.Router({
+		"#localpage2(?:[?/](.*))?": "localpage2",
+	},{
+		localpage2: function(type,match,ui){
+			console.log("localpage2JOrge: "+type);
+			console.log(match);
+		}
+	}, { 
+		defaultHandler: function(type, ui, page) {
+			console.log("Default handler called due to unknown route (" 
+				+ type + ", " + ui + ", " + page + ")");
+		},
+		defaultHandlerEvents: "s"
+	});
+        </script>-->
+</head>
+
+<body>
+
+<script id="home-tpl" type="text/template">
+	<div data-role="page" id="home">
+	   <div data-role="header" class="headerNav" data-position="fixed">
+		   <h1><a href="#" class="ui-btn-inline">SWB Social2</a></h1>
+	   </div>
+  	   <div class="content" data-role="content"></div>	
+	</div>      
+</script>
+
+<script id="auth-tpl" type="text/template">
+    <form id="authForm">
+		<div data-role="fieldcontain">
+			<label for="server" class="">servidor:</label>
+			<input type="text" name="server" id="server" value="" placeholder="servidor" />
+			<label for="username">Username:</label>
+			<input type="text" name="username" id="username" value="" placeholder="Username" />
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" value="" placeholder="Password" />
+		</div>
+		<input type="submit" value="Login" id="submitButton">
+	</form>
+</script>
+
+
+<script id="brand-list-tpl" type="text/template">
+    <ul class="table-view">
+        {{#each this}}
+        <li class="table-view-cell media">
+            <a href="#localpage2?param=value2&param2=value2">
+                <div class="media-body">
+                    {{brandName}}                    
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+
+<script id="stream-list-tpl" type="text/template">
+    <div class="content">
+		<ul class="table-view">
+			{{#each this}}
+			<li class="table-view-cell media">
+				<a href="#stream?id={{ streamURI }}">
+					<div class="media-body">
+						{{streamName}}                    
+					</div>
+				</a>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</script>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="lib/fastclick/js/fastclick.js"></script>
+<script type="text/javascript" src="lib/handlebars/js/handlebars-v1.3.0.js"></script>
+<!--script type="text/javascript" src="lib/router/router.js"></script-->
+<script type="text/javascript" src="js/services/DataService.js"></script>
+<script type="text/javascript" src="lib/json2/json2.js"></script>
+<!--<script type="text/javascript" src="js/app1.js"></script>-->
+<script type="text/javascript" src="js/app.js"></script>
+
+<!--script type="text/javascript">
+	appomat.app.initialize();
+</script-->
+
+</body>
+</html>

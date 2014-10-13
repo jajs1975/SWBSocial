@@ -1,0 +1,82 @@
+ul {
+    clear: both;
+}
+
+.content {
+    position: absolute;
+}
+
+.bar-header-secondary>input {
+    margin-top: 6px;
+    height: 31px;
+}
+
+.table-view {
+    margin: 0 !important;
+    border: none;
+}
+
+.details h1 {
+    padding-top: 16px;
+    font-size: 18px;
+}
+
+.media-object {
+    width: 42px;
+    height: 42px;
+    border-radius: 25px;
+}
+
+.icon-call {
+    background: transparent url(images/ic_action_phone_outgoing.png);
+    background-repeat: no-repeat;
+}
+
+.icon-sms {
+    background: transparent url(images/ic_action_dialog.png);
+    background-repeat: no-repeat;
+}
+
+.icon-mail {
+    background: transparent url(images/ic_action_mail.png);
+    background-repeat: no-repeat;
+}
+
+.icon-manager {
+    background: transparent url(images/ic_action_user.png);
+    background-repeat: no-repeat;
+}
+
+.icon-reports {
+    background: transparent url(images/ic_action_users.png);
+    background-repeat: no-repeat;
+}
+
+.icon-contact {
+    background: transparent url(images/ic_action_add.png);
+    background-repeat: no-repeat;
+}
+
+.icon-location {
+    background: transparent url(images/ic_action_location.png);
+    background-repeat: no-repeat;
+}
+
+/////
+
+#wrapper {
+	position:absolute; z-index:1;
+	top:0; bottom:0; left:0;
+	width:100%;
+	background:#aaa;
+	overflow:auto;
+}
+
+/*SCROLER*/
+#scroller { overflow: auto; -webkit-overflow-scrolling: touch; }
+#scroller ul { list-style:none; padding:0; margin:0; width:100%; text-align:left; padding-top:45px;}
+#scroller li { padding:1px 0 1px 10px; background-color:#000; }
+#scroller li a { text-decoration:none; color:#FFF; text-shadow:none; display:block; border-bottom:1px solid #666; line-height:40px; font-size:14px; padding-left:10px;/* background:url(images/mobile-boton-lista.png) no-repeat right; */ width:100%;}
+#scroller li a:active {/* background:url(images/mobile-boton-lista2.png) no-repeat right #f93;*/ border-bottom:1px solid #fc6; text-shadow:1px 1px 1px #000;}
+
+
