@@ -19,7 +19,7 @@
 
         router.addRoute('brand/:brandID', function(brandID) {
              console.log('streams');
-	      	 alert("Router option2");
+//	      	 alert("Router option2");
 			 var data=[];
 			 data.push({name: 'brandID', value: brandID});
 			 data.push({name: 'action', value: "brandStreams"});
@@ -40,7 +40,7 @@
 		
 		router.addRoute('stream/:streamID', function(streamID) {
              console.log('stream Info');
-	      	 alert("Router option3");
+	      	 //alert("Router option3");
 			 var data=[];
 			 data.push({name: 'streamID', value: streamID});
 			 data.push({name: 'action', value: "streamInfo"});
@@ -90,7 +90,7 @@
 
     function renderAuthView() {
 	    $('body').html(homeTpl());
-		alert("En renderAuthView..");
+//		alert("En renderAuthView..");
 	    $('.content').html(authTpl());
 		$("#authForm").on("submit",handleLogin);
 		checkPreAuth();
@@ -122,16 +122,16 @@ function handleLogin() {
 	var serverURL=$("#server", form).val();
     var user = $("#username", form).val();
     var passw = $("#password", form).val();
-	alert("serverURL:"+serverURL+",user:"+user+",passw:"+passw);
+//	alert("serverURL:"+serverURL+",user:"+user+",passw:"+passw);
 	if(serverURL!='' && user != '' && passw!= '') {
-		alert("va a ir a servicio jorge3x...");
+		//alert("va a ir a servicio jorge3x...");
 		var data = $('#authForm  :input').serializeArray();
 		data.push({name: 'action', value: "login"});
 		//{username: user, password: passw}
 		$.post(serverURL, data, function(response) {
 			if(response != null) {
 				//console.log(typeof res);
-				alert("respuesta GXX:"+JSON.stringify(response));
+				//alert("respuesta GXX:"+JSON.stringify(response));
 				var obj = jQuery.parseJSON(JSON.stringify(response));
 				//$.each(obj, function() {
 				//	alert(obj['isSocialUser']);

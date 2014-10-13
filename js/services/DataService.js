@@ -40,7 +40,7 @@ var DataService = function() {
 		var username=window.localStorage["username"];
 		var password=window.localStorage["password"];
 		   if(serverURL!='' && username != '' && password!= '') {
-				alert("va a ir a servicio de marcas1/serverURL:"+serverURL+",username:"+username+",password:"+password);
+//				alert("va a ir a servicio de marcas1/serverURL:"+serverURL+",username:"+username+",password:"+password);
 				data.push({name: 'username', value: username});
 				data.push({name: 'password', value: password});
 				$.post(serverURL, data, function(response) {
