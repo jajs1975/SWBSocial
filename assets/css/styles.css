@@ -91,12 +91,12 @@ form#authForm  { padding-left:25px;}
 #authForm label {margin-bottom: 5px !important; display: block; color:#f47516;}
 
 .navigate-right:after, .push-right:after { right:0px !important;}
-input#username, input#server, input#password { background:#fafafa; height:50px; width:90%; color:#666; border-radius:5px;}
+input#username, input#server, input#password { background:#fafafa; height:50px; width:90%; color:#666; border-radius:5px; margin-bottom:25px;}
 #authForm #submitButton { width:90%; padding:15px; text-shadow:1px 1px 1px #000; color:#FFF; border-radius:5px; border: solid 1px #666;
-  background: -webkit-linear-gradient(180deg, #f47516, #ffd298, #f47516); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(180deg, #f47516, #ffd298, #f47516); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(180deg, #f47516, #ffd298, #f47516); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(180deg, #f47516, #ffd298, #f47516); /* Standard syntax */}
+  background: -webkit-linear-gradient(180deg, #ffd298, #f47516); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(180deg, #ffd298, #f47516); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(180deg, #ffd298, #f47516); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(180deg, #ffd298, #f47516); /* Standard syntax */}
 
 
 
