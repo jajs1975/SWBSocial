@@ -123,7 +123,7 @@
 		var serverURL=$("#server", form).val();
 		var user = $("#username", form).val();
 		var passw = $("#password", form).val();
-		showMessage("The input is too high.",null,"Warning","Warning");
+		//showMessage("The input is too high.",null,"Warning","Warning");
 	//	alert("serverURL:"+serverURL+",user:"+user+",passw:"+passw);
 		if(serverURL!='' && user != '' && passw!= '') {
 			//alert("va a ir a servicio jorge3x...");
@@ -168,8 +168,7 @@
 }
 
 function showMessage(message, callback, title, buttonName) {
-	alert("Entra a showMessageJ");
-    title = title || "default title";
+	title = title || "default title";
     buttonName = buttonName || 'OK';
 	
     if(navigator.notification && navigator.notification.alert) {
@@ -181,8 +180,7 @@ function showMessage(message, callback, title, buttonName) {
         );
 
     } else {
-
-        alert(message);
+		alert(message);
         callback();
     }
 	
