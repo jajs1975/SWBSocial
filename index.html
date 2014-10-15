@@ -65,13 +65,18 @@
 
 
 <script id="streamInfo" type="text/template">
-    {{#each streamLogo}}	
-		<p>{{streamLogo}}</p>
-    	<p>{{streamName}}</p>
-	{{/each}	
-	{{#each this}}	
+	<br><br>
+	 	<p><img class="media-object pull-left" src="{{streamLogo}} "></p>
+		<br><br>
+		<p>{{streamName}}</p>
+		<p>Número de Mensajes:{{streamMsgNum}}</p>
+	    <p>Positivos:{{streamMsgPostNum}}</p>
+	    <p>Negativos:{{streamMsgNegNum}}</p>
+		<p>Neutros:{{streamMsgNeuNum}}</p>
+   <br><br><br>
+    {{#each this}}	
 		<div class="pieChart" id="pieChart"></div>
-	{{/each}}	
+   {{/each}}    
 </script>
 
 
