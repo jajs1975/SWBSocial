@@ -48,19 +48,17 @@ var DataService = function() {
 						console.log("Response:"+JSON.stringify(response));
 						var jsonData=JSON.stringify(response);
 						//var jsonData = [{"value2":"40.24","color":"#008000","value1":"4048","valor":{"positivos":"4048","negativos":"1243","neutros":"4768"},"label":"positives","chartclass":"possClass"},{"value2":"12.36","color":"#FF0000","value1":"1243","valor":{"positivos":"4048","negativos":"1243","neutros":"4768"},"label":"negatives","chartclass":"negClass"},{"value2":"47.4","color":"#838383","value1":"4768","valor":{"positivos":"4048","negativos":"1243","neutros":"4768"},"label":"neutrals","chartclass":"neuClass"}];
-						//console.log("jsonData Mi estimator1:"+jsonData);	
+						//console.log("jsonData Mi estimator1:"+jsonData);						
 						setContent(response).done(function (result) {
+							$('.content').html(template(result));
 							if(showChart) {
-								var charData = result[0];
-								var GeneralData = result[1];					
-
-								console.log('jsonData Chart DataJJ:' + JSON.stringify(charData));
-								console.log('Other DataJJ:' + JSON.stringify(GeneralData[0]));
-								
-								$('.content').html(template(GeneralData[0]));
-								pieChart(charData);							
-							}else {
-								$('.content').html(template(result));
+								//alert("obj.streamLogo JJ:"+obj.streamLogo);
+								/*
+								$.each(obj, function() {
+										alert("a ver1:"+obj['streamLogo']);
+										console.log("aver 2:"+obj['streamLogo']);
+								});*/
+								pieChart(response);							
 							}
 						});						
 					} else {
@@ -131,8 +129,8 @@ function setContent(response)
 
  function pieChart(jsonData){  
  		console.log("Entra a pieChart:"+jsonData);
-        var width = 480,
-        height = 300,
+        var width = 380,
+        height = 200,
         radius = Math.min(width, height) / 2;
 
 
@@ -235,4 +233,4 @@ function setContent(response)
             });
         });
     }
-    //pieChart(jsonData);
+    pieChart(jsonData);
